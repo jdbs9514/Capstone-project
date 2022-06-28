@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,37 +13,62 @@
     <script src="./app.js"></script>
     <title>Josué Benavides</title>
 </head>
-<body>
-    <header>
-        <div class="close">
-            <span class="cross"><i class="fa-solid fa-xmark"></i></span>
-            <ul class="close-list">
-                <li class="close-item"><a href="home">Home</a></li>
-                <li class="close-item"><a href="program">Program</a></li>
-                <li class="close-item"><a href="speakers">Speakers</a></li>
-                <li class="close-item"><a href="sponsors">Sponsors</a></li>
-                <li class="close-item"><a href="about">About</a></li>
-            </ul>
 
+<body>
+    <div class="intro-container">
+        <header>
+            <div class="close">
+                <span class="cross"><i class="fa-solid fa-xmark"></i></span>
+                <ul class="close-list">
+                    <li class="close-item"><a href="home">Home</a></li>
+                    <li class="close-item"><a href="program">Program</a></li>
+                    <li class="close-item"><a href="speakers">Speakers</a></li>
+                    <li class="close-item"><a href="sponsors">Sponsors</a></li>
+                    <li class="close-item"><a href="about">About</a></li>
+                </ul>
+
+            </div>
+            <div class="nav-bar-mobile">
+                <button type="button" class="hamburger"><i class="fa-solid fa-bars"></i></button>
+                <ul class="navigation">
+                    <li class="home"><a href="#">Home</a></li>
+                    <li class="program"><a href="#">Program</a></li>
+                    <li class="speakers"><a href="#">Speakers</a></li>
+                    <li class="sponsors"><a href="#">Sponsors</a></li>
+                    <li class="about"><a href="#">About</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="intro">
+            <h2 class="hello">"Hello! Sharing world"</h2>
+            <h1 id="title" class="title">INTERNATIONAL BOOK FAIR IN JESUS MARIA 2022 </h1>
+            <p class="description">You are invited to the International Book Fair in Lima (IBF)
+                that will take place on Proceres park in Jesus Maria</p>
+            <h3 class="date">22 July, 2022</h3>
+            <p class="location">Lima, Perú</p>
         </div>
-        <div class="nav-bar-mobile">
-            <button type="button" class="hamburger"><i class="fa-solid fa-bars"></i></button>
-            <ul class="navigation">
-                <li class="home"><a href="#">Home</a></li>
-                <li class="program"><a href="#">Program</a></li>
-                <li class="speakers"><a href="#">Speakers</a></li>
-                <li class="sponsors"><a href="#">Sponsors</a></li>
-                <li class="about"><a href="#">About</a></li>
-            </ul>
+    </div>
+    <div class="main-program">
+        <h2 class="subtitle">Main Program</h2>
+        <div class="linea"></div>
+        <div class="item-list">
+            <img src="./images/list1.png" alt="conference" class="images">
+            <h3 class="img-title">Opinion</h3>
+            <p class="img-des">Listen to the Speakers experts of the art of writing</p>
         </div>
-    </header>
-    <div class="intro">
-        <h2 class="hello">"Hello! Sharing world"</h2>
-        <h1 id="title" class="title">CREATIVE COMMONS GLOBAL SUMMIT 2015</h1>
-        <p class="description">You are invited to the International Book Fair in Lima (IBF)
-            that will take place on Proceres park in Jesus Maria</p>
-        <h3 class="date">22 July, 2022</h3>
-        <p class="location">Lima, Perú</p>
+        <div class="item-list">
+            <img src="./images/list2.png" alt="conversation" class="images">
+            <h3 class="img-title">Conversation</h3>
+            <p class="img-des">Share your ideas and opinions with other people in the place</p>
+        </div>
+        <div class="item-list">
+            <img src="./images/list3.png" alt="buy" class="images">
+            <h3 class="img-title">Store</h3>
+            <p class="img-des">The most variable selection of books</p>
+        </div>
+        <a href="#" class="square">See whole program</a>
+
     </div>
 </body>
+
 </html>
