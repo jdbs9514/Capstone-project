@@ -18,7 +18,7 @@ closeMenu.addEventListener('click', () => {
   xMarx.classList.remove('active');
 });
 
-const speakers = document.getElementById('speakers');
+const speakers = document.getElementById('featured-speakers');
 
 // create an object //
 
@@ -54,10 +54,14 @@ const cards = [
 
 // create the speaker elements //
 
+const featuredSpeakers = document.createElement('div');
+featuredSpeakers.classList.add('position');
+speakers.appendChild(featuredSpeakers);
+
 for (let i = 0; i < cards.length; i += 1) {
   const container = document.createElement('div');
   container.classList.add('cards');
-  speakers.appendChild(container);
+  featuredSpeakers.appendChild(container);
 
   const picture = document.createElement('img');
   picture.classList.add('img-speakers');

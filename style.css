@@ -161,6 +161,7 @@ body {
   margin-top: 5%;
   text-decoration: none;
   border: 1px solid #d35400;
+  cursor: pointer;
 }
 
 .space {
@@ -182,7 +183,7 @@ body {
 
 .cards {
   display: flex;
-  margin-left: 3%;
+  margin-left: 5%;
 }
 
 .info-container {
@@ -223,4 +224,78 @@ body {
   align-items: center;
   padding: 5%;
   gap: 8rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #2e2e2e;
+  padding: 10%;
+}
+
+.slogan {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 0.8rem;
+  margin-left: 5%;
+  margin-top: 5%;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    padding: 12rem;
+    background-position: center;
+    padding-top: 5%;
+    margin-bottom: -10%;
+  }
+
+  .hello {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .description {
+    max-width: 37rem;
+  }
+
+  .date {
+    font-size: 50px;
+    margin-top: 0%;
+    padding-top: 2%;
+  }
+
+  .location {
+    font-size: 30px;
+    margin-top: -5%;
+  }
+
+  .div-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .item-list {
+    display: block;
+    width: 50%;
+    padding: 3rem;
+  }
+
+  .square {
+    padding: 1.5rem 1rem;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  .position {
+    
+  }
 }
