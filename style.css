@@ -204,3 +204,23 @@ body {
   color: #272a31;
   font-size: 1rem;
 }
+
+.sponsor-title {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.sponsor-img {
+  margin-top: 5%;
+  width: 25rem;
+  list-style-type: none;
+}
+
+.sponsor {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 5%;
+  gap: 8rem;
+}
