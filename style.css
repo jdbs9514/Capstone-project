@@ -182,6 +182,7 @@ body {
 
 .cards {
   display: flex;
+  margin-left: 3%;
 }
 
 .info-container {
