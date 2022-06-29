@@ -174,3 +174,32 @@ body {
   font-size: 30px;
   font-weight: 700;
 }
+
+.img-speakers {
+  width: 10rem;
+  height: 10rem;
+}
+
+.cards {
+  display: flex;
+}
+
+.info-container {
+  padding: 4%;
+  margin: 2%;
+}
+
+.img-name {
+  color: #000;
+  font-size: 1.3rem;
+}
+
+.card-sub {
+  color: #cc4030;
+  font-size: 1rem;
+}
+
+.info {
+  color: #272a31;
+  font-size: 1rem;
+}

@@ -18,7 +18,7 @@ closeMenu.addEventListener('click', () => {
   xMarx.classList.remove('active');
 });
 
-const speakers = document.querySelector('.speakers');
+const speakers = document.getElementById('speakers');
 
 // create an object //
 
@@ -27,28 +27,28 @@ const cards = [
     image: './images/jaime.png',
     title: 'Jaime Bayly',
     subtitle: 'television host and writer',
-    text: 'Wrote one of the most popular novels for the youth of Lima',
+    text: 'Wrote one of the most popular novels for the youth of Lima.',
   },
 
   {
     image: './images/vargas.png',
     title: 'Mario Vargas Llosa',
     subtitle: 'Peruvian writer',
-    text: 'Popular Peruvian writer with years of transcendence',
+    text: 'Popular Peruvian writer with years of transcendence.',
   },
 
   {
     image: './images/bryce.png',
     title: 'Alfredo Bryce Echenique',
     subtitle: 'Peruvian writer',
-    text: '"Un mundo para Julius" popular novel and written by this excellent writer',
+    text: '"Un mundo para Julius" popular novel and written by this excellent writer.',
   },
 
   {
     image: './images/adelia.png',
     title: 'Adélia Carvalho',
     subtitle: 'Portuguese writer',
-    text: 'Guest of honor at this fair',
+    text: 'Guest of honor at this fair.',
   },
 ];
 
@@ -56,27 +56,31 @@ const cards = [
 
 for (let i = 0; i < cards.length; i += 1) {
   const container = document.createElement('div');
-  container.classList.add('.cards');
+  container.classList.add('cards');
   speakers.appendChild(container);
 
   const picture = document.createElement('img');
-  picture.classList.add('.img-speakers');
+  picture.classList.add('img-speakers');
   picture.src = cards[i].image;
   picture.alt = 'images';
   container.appendChild(picture);
 
-  const Name = document.createElement('h1');
-  Name.classList.add('img-name');
-  Name.textContent = cards[i].title;
-  container.appendChild(Name);
+  const infoContainer = document.createElement('div');
+  infoContainer.classList.add('info-container');
+  container.appendChild(infoContainer);
+
+  const cardName = document.createElement('h1');
+  cardName.classList.add('img-name');
+  cardName.textContent = cards[i].title;
+  infoContainer.appendChild(cardName);
 
   const cardSub = document.createElement('h2');
-  cardSub.classList.add('.card-sub');
+  cardSub.classList.add('card-sub');
   cardSub.textContent = cards[i].subtitle;
-  container.appendChild(cardSub);
+  infoContainer.appendChild(cardSub);
 
   const infoCard = document.createElement('p');
-  infoCard.classList.add('.info');
+  infoCard.classList.add('info');
   infoCard.textContent = cards[i].text;
-  container.appendChild(infoCard);
+  infoContainer.appendChild(infoCard);
 }
