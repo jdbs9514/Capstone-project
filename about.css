@@ -89,11 +89,15 @@ body {
   background: url("images/background-capstone1.png");
   background-position: center;
   padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .hello {
   color: #f39c12;
   font-weight: 300;
+  text-align: center;
 }
 
 .title {
@@ -101,6 +105,8 @@ body {
   font-size: 10vw;
   font-weight: 900;
   text-shadow: 0.03em 0.03em 0.02em #0009;
+  text-align: center;
+  align-self: center;
 }
 
 .description {
@@ -108,6 +114,7 @@ body {
   border: 4px solid #fff;
   padding: 4%;
   background-color: #f7f7f7;
+  align-items: center;
 }
 
 .date {
@@ -115,11 +122,13 @@ body {
   font-weight: 900;
   margin-top: 40px;
   padding: 5%;
+  text-align: center;
 }
 
 .location {
   color: #000;
-  padding-left: 5%;
+  padding-left: 0%;
+  text-align: center;
 }
 
 .main-program {
@@ -128,25 +137,11 @@ body {
   background-color: rgb(39, 42, 50);
 }
 
-.subtitle {
-  text-align: center;
-  color: #fff;
-}
-
-.linea {
-  width: 53px;
-  height: 16px;
-  border-bottom: 1px solid rgb(239, 81, 60);
-  margin: 0 auto 54px;
-}
-
 .item-list {
   display: flex;
   align-items: center;
   gap: 2rem;
   justify-content: stretch;
-  background-color: #fff1;
-  border: 1px solid rgb(39, 42, 50);
   padding: 1rem;
   margin-left: 2%;
   margin-right: 2%;
@@ -192,6 +187,67 @@ body {
   text-align: center;
   font-size: 30px;
   font-weight: 700;
+}
+
+.linea-2 {
+  width: 53px;
+  height: 16px;
+  border-bottom: 1px solid rgb(239, 81, 60);
+  margin: 0 auto 54px;
+}
+
+.guion {
+  text-align: center;
+  color: #808080;
+}
+
+.other-programs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 5%;
+}
+
+.feria-img {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.05);
+  transition: 400ms ease-in-out;
+}
+
+.cover {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: multiply;
+  background-color: #9e2a1d;
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.year {
+  font-size: 4rem;
+  font-weight: 100;
+  color: white;
+  z-index: 1;
+}
+
+.sentence {
+  color: white;
+  z-index: 1;
 }
 
 .img-speakers {
@@ -265,25 +321,7 @@ body {
   font-weight: 100;
 }
 
-.div-button {
-  display: flex;
-  justify-content: center;
-  margin-top: 8%;
-}
-
-.see {
-  font-size: 30px;
-  padding: 2%;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 @media screen and (min-width: 768px) {
-  .see {
-    display: none;
-  }
-
   .black-nav {
     display: flex;
     justify-content: end;
@@ -370,6 +408,8 @@ body {
 
   .description {
     max-width: 37rem;
+    align-items: center;
+    margin-inline: auto;
   }
 
   .date {
@@ -389,9 +429,18 @@ body {
   }
 
   .item-list {
-    display: block;
-    width: 50%;
-    padding: 3rem;
+    display: flex;
+    align-items: center;
+    max-width: 40rem;
+    gap: 2rem;
+    padding-inline: 1rem;
+    margin-left: 20%;
+  }
+
+  .other-programs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 
   .square {
