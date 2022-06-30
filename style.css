@@ -54,6 +54,10 @@ body {
   display: none;
 }
 
+.black-nav {
+  display: none;
+}
+
 .hamburger {
   color: #808080;
   background: none;
@@ -61,6 +65,20 @@ body {
   font-size: 30px;
   padding: 3%;
   cursor: pointer;
+}
+
+.logo-img {
+  width: 18%;
+  display: inline-block;
+  padding: 0%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.mobile-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 30%;
 }
 
 .hamburger.active {
@@ -189,6 +207,7 @@ body {
 .info-container {
   padding: 4%;
   margin: 2%;
+  width: 70%;
 }
 
 .img-name {
@@ -220,7 +239,6 @@ body {
 .sponsor {
   display: flex;
   flex-direction: column;
-  justify-content: end;
   align-items: center;
   padding: 5%;
   gap: 8rem;
@@ -248,6 +266,75 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .black-nav {
+    display: flex;
+    justify-content: end;
+    background-color: rgb(62, 62, 62);
+    padding-right: 4%;
+  }
+
+  .ul-black {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: #f7f7f7;
+  }
+
+  .github a {
+    color: #f7f7f7;
+    margin-right: 10px;
+  }
+
+  .facebook a {
+    color: #f7f7f7;
+    margin-right: 10px;
+  }
+
+  .anything a {
+    color: #f7f7f7;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .logo-img {
+    width: 25%;
+    display: inline-block;
+    padding: 0%;
+    margin-left: -85%;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style-type: none;
+    gap: 5%;
+    margin-right: 3%;
+    padding: 1%;
+    margin-top: 1%;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+  }
+
+  .about a {
+    border: 1px solid #ef513c;
+    color: #fff;
+    background-color: #ef513c;
+    padding: 10%;
+    text-decoration: none;
+  }
+
   .intro {
     padding: 12rem;
     background-position: center;
@@ -296,6 +383,35 @@ body {
   }
 
   .position {
-    
+    column-count: 2;
+  }
+
+  .cards {
+    gap: 10px;
+    padding: 5%;
+    align-self: auto;
+  }
+
+  .sponsor {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    gap: 10px;
+  }
+
+  .sponsor-img {
+    width: 80%;
+  }
+
+  .footer {
+    padding: 0%;
+  }
+
+  .slogan {
+    padding: 5%;
+  }
+
+  .copyright {
+    padding: 1%;
   }
 }

@@ -18,7 +18,7 @@ closeMenu.addEventListener('click', () => {
   xMarx.classList.remove('active');
 });
 
-const speakers = document.getElementById('featured-speakers');
+const speakers = document.getElementById('speakers');
 
 // create an object //
 
