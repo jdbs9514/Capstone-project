@@ -59,9 +59,18 @@ featuredSpeakers.classList.add('position');
 speakers.appendChild(featuredSpeakers);
 
 for (let i = 0; i < cards.length; i += 1) {
+  const hiddenCont = document.createElement('div');
+  hiddenCont.classList.add('semi-cont');
+  featuredSpeakers.appendChild(hiddenCont);
+
+  if (i >= 2) {
+    hiddenCont.classList.add('hidden');
+    hiddenCont.setAttribute('id', `c${i}`);
+  }
+
   const container = document.createElement('div');
   container.classList.add('cards');
-  featuredSpeakers.appendChild(container);
+  hiddenCont.appendChild(container);
 
   const picture = document.createElement('img');
   picture.classList.add('img-speakers');
@@ -95,16 +104,14 @@ speakers.appendChild(contButton);
 
 const button = document.createElement('button');
 button.classList.add('see');
-button.type = "checkbox";
+button.type = 'button';
 button.innerHTML = 'show more <i class="fa-solid fa-angle-down"></i>';
 contButton.appendChild(button);
 
-
-/*button.addEventListener('click', () => {
+button.addEventListener('click', () => {
+  const hiddenCont = document.getElementById('c2');
+  const hiddenCont2 = document.getElementById('c3');
   button.classList.toggle('active');
-  if(container => 5) {
-    cards[0].cards[1].container;
-  } else {
-    button;
-  }
-});*/
+  hiddenCont.classList.toggle('active');
+  hiddenCont2.classList.toggle('active');
+});

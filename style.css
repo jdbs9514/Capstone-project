@@ -279,9 +279,25 @@ body {
   cursor: pointer;
 }
 
+.see.hidden {
+  display: flex;
+}
+
+.semi-cont {
+  display: flex;
+}
+
+.hidden.active {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
-  .see {
-    display: none;
+  .hidden {
+    display: flex;
   }
 
   .black-nav {
@@ -408,6 +424,10 @@ body {
     gap: 10px;
     padding: 5%;
     align-self: auto;
+  }
+
+  .see {
+    display: none;
   }
 
   .sponsor {
