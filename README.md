@@ -9,7 +9,13 @@ Capstone project
 
 this is mi capstone project, the last project of the module 1 on microvers. i make a page about the book fear in Lima, this event is super interesting for the reading lovers.
 
+loom video :
 
+https://www.loom.com/share/307d617f9e8649acbaea51a4945f6d64
+
+## Live Demo
+
+ https://jdbs9514.github.io/Capstone-project/
 
 ## GETTING STARTED
 
