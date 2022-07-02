@@ -281,48 +281,21 @@ body {
   font-size: 1rem;
 }
 
-.sponsor-title {
-  margin-top: 10%;
-  text-align: center;
-  color: #fff;
-}
-
-.sponsor-img {
-  margin-top: 5%;
-  width: 5rem;
-  list-style-type: none;
-  opacity: 100%;
-}
-
-.div-sponsor {
-  background-color: #2e2e2e;
-}
-
-.sponsor {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 5%;
-  gap: 1rem;
-  margin-left: 10%;
-}
-
 .footer {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  background-color: #fff;
+  background-color: #2e2e2e;
   padding: 10%;
 }
 
 .slogan {
-  color: #2e2e2e;
+  color: #fff;
   font-size: 2rem;
 }
 
 .copyright {
-  color: #2e2e2e;
+  color: #fff;
   font-size: 0.8rem;
   margin-left: 5%;
   margin-top: 5%;
@@ -466,22 +439,6 @@ body {
     gap: 10px;
     padding: 5%;
     align-self: auto;
-  }
-
-  .div-sponsor {
-    background-color: #2e2e2e;
-  }
-
-  .sponsor {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 5%;
-    gap: 10px;
-  }
-
-  .sponsor-img {
-    width: 80%;
   }
 
   .footer {

@@ -41,9 +41,8 @@ Josué David Benavides Salinas
 
 
 ## Acknowledgments
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+
+I want to thank Cindy Shin for the layout of the project and thanks to that she helped me to make this project.
 ## 📝 License
 
 This project is MIT.md licensed.
