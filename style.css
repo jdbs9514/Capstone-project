@@ -228,37 +228,45 @@ body {
 .sponsor-title {
   margin-top: 10%;
   text-align: center;
+  color: #fff;
 }
 
 .sponsor-img {
   margin-top: 5%;
-  width: 25rem;
+  width: 5rem;
   list-style-type: none;
+  opacity: 100%;
+}
+
+.div-sponsor {
+  background-color: #2e2e2e;
 }
 
 .sponsor {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   padding: 5%;
-  gap: 8rem;
+  gap: 1rem;
+  margin-left: 10%;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  background-color: #2e2e2e;
+  background-color: #fff;
   padding: 10%;
 }
 
 .slogan {
-  color: #fff;
+  color: #2e2e2e;
   font-size: 2rem;
 }
 
 .copyright {
-  color: #fff;
+  color: #2e2e2e;
   font-size: 0.8rem;
   margin-left: 5%;
   margin-top: 5%;
@@ -429,9 +437,14 @@ body {
     display: none;
   }
 
+  .div-sponsor {
+    background-color: #2e2e2e;
+  }
+
   .sponsor {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     margin: 5%;
     gap: 10px;
   }

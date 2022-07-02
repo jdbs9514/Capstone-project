@@ -1,4 +1,4 @@
-# Capstone-project
+# Project name
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
@@ -39,6 +39,11 @@ Josué David Benavides Salinas
 - Gmail:jdbs9514@gmail.com
 - GitHub: @jdbs9514
 
+
+## Acknowledgments
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 ## 📝 License
 
 This project is MIT.md licensed.

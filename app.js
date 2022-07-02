@@ -50,6 +50,20 @@ const cards = [
     subtitle: 'Portuguese writer',
     text: 'Guest of honor at this fair.',
   },
+
+  {
+    image: './images/haruki.png',
+    title: 'Haruki Murakami',
+    subtitle: 'Japanese writer',
+    text: 'I hope to be in this next fair',
+  },
+
+  {
+    image: './images/paulo1.png',
+    title: 'Paulo Cohelo',
+    subtitle: 'Brasilian writer',
+    text: 'Peru have a great potential in the world of writing',
+  },
 ];
 
 // create the speaker elements //
@@ -111,7 +125,11 @@ contButton.appendChild(button);
 button.addEventListener('click', () => {
   const hiddenCont = document.getElementById('c2');
   const hiddenCont2 = document.getElementById('c3');
+  const hiddenCont3 = document.getElementById('c4');
+  const hiddenCont4 = document.getElementById('c5');
   button.classList.toggle('active');
   hiddenCont.classList.toggle('active');
   hiddenCont2.classList.toggle('active');
+  hiddenCont3.classList.toggle('active');
+  hiddenCont4.classList.toggle('active');
 });
