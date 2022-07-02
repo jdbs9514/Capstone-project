@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+}
+
+.close {
+  text-align: start;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 7.5%;
+  padding-top: 5%;
+  padding-right: 10%;
+  top: 0%;
+  left: -110%;
+  color: #fff;
+  background-color: #272a31f7;
+  opacity: 98%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.close.active {
+  left: 0%;
+}
+
+.close-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.close-list {
+  list-style-type: none;
+  font-size: 30px;
+  padding: 3%;
+  line-height: 10vh;
+  margin-bottom: 50px;
+}
+
+.cross {
+  text-align: right;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.navigation {
+  display: none;
+}
+
+.black-nav {
+  display: none;
+}
+
+.hamburger {
+  color: #808080;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 3%;
+  cursor: pointer;
+}
+
+.logo-img {
+  display: none;
+  width: 18%;
+  padding: 0%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.mobile-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 30%;
+}
+
+.hamburger.active {
+  color: #808080;
+}
+
+.intro {
+  background: url("images/background-capstone1.png");
+  background-position: center;
+  padding: 2rem 1rem;
+}
+
+.hello {
+  color: #f39c12;
+  font-weight: 300;
+}
+
+.title {
+  color: #808000;
+  font-size: 10vw;
+  font-weight: 900;
+  text-shadow: 0.03em 0.03em 0.02em #0009;
+}
+
+.description {
+  color: #000;
+  border: 4px solid #fff;
+  padding: 4%;
+  background-color: #f7f7f7;
+}
+
+.date {
+  color: #808080;
+  font-weight: 900;
+  margin-top: 40px;
+  padding: 5%;
+}
+
+.location {
+  color: #000;
+  padding-left: 5%;
+}
+
+.main-program {
+  background-image: url("./images/background-capstone2.png");
+  background-repeat: repeat;
+  background-color: rgb(39, 42, 50);
+}
+
+.subtitle {
+  text-align: center;
+  color: #fff;
+}
+
+.linea {
+  width: 53px;
+  height: 16px;
+  border-bottom: 1px solid rgb(239, 81, 60);
+  margin: 0 auto 54px;
+}
+
+.item-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: stretch;
+  background-color: #fff1;
+  border: 1px solid rgb(39, 42, 50);
+  padding: 1rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  text-align: start;
+}
+
+.img-title {
+  flex-grow: 1;
+  font-size: 1.5rem;
+  color: rgb(239, 81, 60);
+}
+
+.img-des {
+  color: #fff;
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  align-self: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.space {
+  width: 53px;
+  height: 16px;
+  margin: 0 auto 54px;
+}
+
+.speakers-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.img-speakers {
+  width: 10rem;
+  height: 10rem;
+}
+
+.cards {
+  display: flex;
+  margin-left: 5%;
+}
+
+.info-container {
+  padding: 4%;
+  margin: 2%;
+  width: 70%;
+}
+
+.img-name {
+  color: #000;
+  font-size: 1.3rem;
+}
+
+.card-sub {
+  color: #cc4030;
+  font-size: 1rem;
+}
+
+.info {
+  color: #272a31;
+  font-size: 1rem;
+}
+
+.sponsor-title {
+  margin-top: 10%;
+  text-align: center;
+  color: #fff;
+}
+
+.sponsor-img {
+  margin-top: 5%;
+  width: 5rem;
+  list-style-type: none;
+  opacity: 100%;
+}
+
+.div-sponsor {
+  background-color: #2e2e2e;
+}
+
+.sponsor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5%;
+  gap: 1rem;
+  margin-left: 10%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #fff;
+  padding: 10%;
+}
+
+.slogan {
+  color: #2e2e2e;
+  font-size: 2rem;
+}
+
+.copyright {
+  color: #2e2e2e;
+  font-size: 0.8rem;
+  margin-left: 5%;
+  margin-top: 5%;
+  font-weight: 100;
+}
+
+.div-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.see {
+  font-size: 30px;
+  padding: 2%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.see.hidden {
+  display: flex;
+}
+
+.semi-cont {
+  display: flex;
+}
+
+.hidden.active {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hidden {
+    display: flex;
+  }
+
+  .black-nav {
+    display: flex;
+    justify-content: end;
+    background-color: rgb(62, 62, 62);
+    padding-right: 4%;
+  }
+
+  .ul-black {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: #f7f7f7;
+  }
+
+  .github a {
+    color: #f7f7f7;
+    margin-right: 10px;
+  }
+
+  .facebook a {
+    color: #f7f7f7;
+    margin-right: 10px;
+  }
+
+  .anything a {
+    color: #f7f7f7;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .logo-img {
+    width: 25%;
+    display: inline-block;
+    padding: 0%;
+    margin-left: -85%;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    list-style-type: none;
+    gap: 5%;
+    margin-right: 3%;
+    padding: 1%;
+    margin-top: 1%;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+  }
+
+  .about a {
+    border: 3px solid #ef513c;
+    color: rgb(136, 136, 136);
+    padding: 10%;
+    text-decoration: none;
+  }
+
+  .intro {
+    padding: 12rem;
+    background-position: center;
+    padding-top: 5%;
+    margin-bottom: -10%;
+  }
+
+  .hello {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .description {
+    max-width: 37rem;
+  }
+
+  .date {
+    font-size: 50px;
+    margin-top: 0%;
+    padding-top: 2%;
+  }
+
+  .location {
+    font-size: 30px;
+    margin-top: -5%;
+  }
+
+  .div-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .item-list {
+    display: block;
+    width: 50%;
+    padding: 3rem;
+  }
+
+  .square {
+    padding: 1.5rem 1rem;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  .position {
+    column-count: 2;
+  }
+
+  .cards {
+    gap: 10px;
+    padding: 5%;
+    align-self: auto;
+  }
+
+  .see {
+    display: none;
+  }
+
+  .div-sponsor {
+    background-color: #2e2e2e;
+  }
+
+  .sponsor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 5%;
+    gap: 10px;
+  }
+
+  .sponsor-img {
+    width: 80%;
+  }
+
+  .footer {
+    padding: 0%;
+  }
+
+  .slogan {
+    padding: 5%;
+  }
+
+  .copyright {
+    padding: 1%;
+  }
+}
